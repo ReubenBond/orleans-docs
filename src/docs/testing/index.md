@@ -157,7 +157,7 @@ public new virtual IGrainFactory GrainFactory
 }
 ```
 
-Now we can create our grain outside of the Orleans runtime and use mocking to control the behaviour of `GrainFactory`:
+Now we can create our grain outside of the Orleans runtime and use mocking to control the behavior of `GrainFactory`:
 
 ```csharp
 using System;
@@ -190,5 +190,5 @@ namespace Tests
 }
 ```
 
-Here we create our grain under test, `WorkerGrain`, using Moq which means we can then override the behaviour of the `GrainFactory` so that it returns a mocked `IJournalGrain`.
+Here we create our grain under test, `WorkerGrain`, using Moq which means we can then override the behavior of the `GrainFactory` so that it returns a mocked `IJournalGrain`.
 We can then verify that our `WorkerGrain` interacts with the `IJournalGrain` as we expect.

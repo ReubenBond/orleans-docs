@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Running the Application
+title: Deployment
 ---
 
 ### Orleans Application

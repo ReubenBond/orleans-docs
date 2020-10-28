@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Runtime Monitoring
+title: Monitoring and diagnostics
 ---
 
-# Runtime Monitoring
+# Monitoring and diagnostics
 
 Orleans output its runtime statistics and metrics through the `ITelemetryConsumer` interface.
-Application can register one or more telemetry consumers with for their silos and clients, to receives statistics and metrics that Orleans runtime  periotically publishes.
+Application can register one or more telemetry consumers with for their silos and clients, to receives statistics and metrics that Orleans runtime  periodically publishes.
 These can be consumers for popular telemetry analytics solutions or custom ones for any other destination and purpose.
 Three telemetry consumer are currently included in the Orleans codebase.
 

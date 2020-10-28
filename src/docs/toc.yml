@@ -5,8 +5,10 @@
   href: grains/toc.yml
 - name: Streaming
   href: streaming/toc.yml
+- name: Host
+  href: index.md
 - name: Hosting
-  href: clusters_and_clients/toc.yml
+  href: /toc.yml
   items:
   - name: Configuration Guide
     href: index.md

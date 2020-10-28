@@ -7,6 +7,8 @@ title: Clients
 
 ## Hosted clients
 
+Configuring Orleans
+
 ## External clients
 
 The term "Client" is used for application code that interacts with grains but itself is not part of a grain logic.
