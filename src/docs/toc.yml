@@ -13,7 +13,7 @@
   - name: Monitoring
     href: index.md
   - name: Deployment
-    href: deployment/toc.yml
+    href: index.md
 - name: Tutorials and Samples
   href: tutorials_and_samples/toc.yml
 - name: Implementation Details

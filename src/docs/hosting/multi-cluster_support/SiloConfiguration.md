@@ -5,27 +5,7 @@ title: Multi-Cluster Silo Configuration
 
 ## Orleans Silo Configuration
 
-To get a quick overview, we show all relevant configuration parameters (including optional ones) in XML syntax below:
-
-```html
-<?xml version="1.0" encoding="utf-8"?>
-<OrleansConfiguration xmlns="urn:orleans">
-  <Globals>
-    <MultiClusterNetwork
-      ClusterId="clusterid"
-      DefaultMultiCluster="uswest,europewest,useast"
-      BackgroundGossipInterval="30s"
-      UseGlobalSingleInstanceByDefault="false"
-      GlobalSingleInstanceRetryInterval="30s"
-      GlobalSingleInstanceNumberRetries="3"
-      MaxMultiClusterGateways="10">
-         <GossipChannel  Type="..."  ConnectionString="..."/>      
-         <GossipChannel  Type="..."  ConnectionString="..."/>      
-    </MultiClusterNetwork>
-    <SystemStore ... ServiceId="some-guid" .../>
-  </Globals>
-</OrleansConfiguration>
-```
+To get a quick overview, we show all relevant configuration parameters:
 
 ```csharp
 var silo = new SiloHostBuilder()
@@ -50,9 +30,6 @@ var silo = new SiloHostBuilder()
   })
   [...]
 ```
-
-As usual, all configuration settings can also be read and written programmatically, via the respective members of the `GlobalConfiguration` class.
-
 
 The `Service Id` is an arbitrary ID for identifying this service. It must be the same for all clusters and all silos. 
 

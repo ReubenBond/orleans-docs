@@ -236,7 +236,7 @@ or
 <configuration>
  <packageSources>
   <clear />
-  <add key="orleans-ci" value="https://dotnet.myget.org/F/orleans-ci/api/v3/index.json" />
+  <add key="orleans-ci" value="https://orleans.pkgs.visualstudio.com/orleans-public/_packaging/orleans-builds/nuget/v3/index.json" />
   <add key="nuget" value="https://api.nuget.org/v3/index.json" />
  </packageSources>
 </configuration>

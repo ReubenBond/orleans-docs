@@ -11,3 +11,5 @@
   href: configuration_guide/toc.yml
 - name: Monitoring
   href: monitoring/toc.yml
+- name: Multi-Cluster Support
+  href: multi-cluster_support/toc.yml

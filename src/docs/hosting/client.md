@@ -1,11 +1,15 @@
 ---
 layout: page
-title: What is a grain client
+title: Clients
 ---
 
-### What is a Grain Client?
+# Clients
 
-The term "Client" or sometimes "Grain Client" is used for application code that interacts with grains but itself is not part of a grain logic.
+## Hosted clients
+
+## External clients
+
+The term "Client" is used for application code that interacts with grains but itself is not part of a grain logic.
 Client code runs outside of the cluster of Orleans servers called silos where grains are hosted.
 Hence, a client acts as a connector or conduit to the cluster and to all grains of the application.
 
@@ -20,7 +24,7 @@ In a typical setup, a frontend web server:
 * Handles successful completion or failures of the grain calls and any returned values
 * Sends a response for the web request
 
-### Initialization of Grain Client
+### Client initialization
 
 Before a grain client can be used for making calls to grains hosted in an Orleans cluster, it needs to be configured, initialized, and connected to the cluster.
 
